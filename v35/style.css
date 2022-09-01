@@ -1,0 +1,32 @@
+p {
+    color: green;
+}
+
+.a-describing-name {
+    font-size: 35px;
+}
+
+#a-very-special-paragraph {
+    font-size: 25px;
+}
+
+.my-class {
+    color: blueviolet;
+}
+
+#my-id {
+    color: red;
+}
+
+p.my-class {
+    color: orange;
+}
+
+p .my-class {
+    color: black;
+}
+  
+h1, h2 {
+    color: red;
+}
+  
