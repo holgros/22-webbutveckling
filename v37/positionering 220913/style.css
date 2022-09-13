@@ -1,0 +1,23 @@
+.position1 {
+  background-color: greenyellow;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+.position2 {
+  background-color: gray;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.green {
+  background-color: green;
+  height: 30px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
