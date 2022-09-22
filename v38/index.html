@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox-demo</title>
+    <link rel="stylesheet" href="flexboxdemo.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Två kolumners-layout</h2>
+      <p>
+        Det är inte helt ovanligt att man vill dela in en sida i kolumner. Det
+        görs lätt med <code>display: flex</code> och två block-element som t.ex.
+        <code>div</code>. Bredden på kolumnerna sätts med
+        <code>width</code> eller <code>flex</code>.
+      </p>
+      <div class="two-columns">
+        <div class="col col-left">
+          <h2>Detta är innehåll i kolumn 1</h2>
+          <p>
+            Denna kolumn har <code>width: 25%</code> för att ta upp 25% av sin
+            parent.
+          </p>
+          <p>T.ex. en lista med länkar</p>
+          <ul>
+            <li><a href="">Länk 1</a></li>
+            <li><a href="">Länk 2</a></li>
+            <li><a href="">Länk 3</a></li>
+            <li><a href="">Länk 4</a></li>
+            <li><a href="">Länk 5</a></li>
+          </ul>
+        </div>
+        <div class="col col-right">
+          <h2>Detta är innehåll i kolumn 2</h2>
+          <p>
+            Denna kolumn har <code>width: 75%</code> för att ta upp 75% av sin
+            parent.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2>Centrering vertikalt och horisontellt</h2>
+    <p>
+      Med <code>display: flex</code> samt
+      <code>justify-content: center</code> och
+      <code>align-items: center</code> så kan man centrera något i mitten av en
+      box, både horisontellt och vertikalt.
+    </p>
+    <div class="grey-bordered centerer vertical-center">
+      <h2>Innehåll i mitten av en div!</h2>
+    </div>
+    <h2>Horisontella listor av länkar</h2>
+    <p>
+      För att skapa en horisontell lista med länkar kan man sätta
+      <code>display: flex</code> på sin <code>ul</code> samt sätta lite
+      <code>margin</code> på sina <code>li</code>.
+    </p>
+    <ul class="horizontal-menu">
+      <li><a href="">Länk 1</a></li>
+      <li><a href="">Länk 2</a></li>
+      <li><a href="">Länk 3</a></li>
+      <li><a href="">Länk 4</a></li>
+      <li class="push-right">
+        <a href="">Länk 5 (har <code>margin-left: auto</code> )</a>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+code {
+  background-color: darkgray;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.two-columns {
+  width: 100%;
+  display: flex;
+}
+
+.col-left {
+  background-color: lightblue;
+  height: 50vh;
+  width: 25%;
+}
+
+.col-right {
+  background-color: lightpink;
+  height: 50vh;
+  width: 75%;
+}
+
+/*
+  Centrering vertikalt
+  --------------------
+  Med display: flex samt justify-content: center och align-items: center så
+  kan man centrera något i mitten av en box, både horisontellt och vertikalt.
+*/
+.grey-bordered {
+  border: 3px solid grey;
+  height: 40vh;
+}
+.centerer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.vertical-center {
+  align-items: center;
+}
+
+/*
+  Horisontell meny
+  --------------------
+*/
+.horizontal-menu {
+  display: flex;
+  list-style: none;
+}
+.horizontal-menu li {
+  margin-right: 20px;
+}
+.push-right {
+  margin-left: auto;
+}
