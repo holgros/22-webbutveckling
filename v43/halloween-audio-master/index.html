@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halloween</title>
+    <script
+      src="https://kit.fontawesome.com/4b39a549d2.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Halloween</h1>
+    <audio id="thunder" loop>
+      <source src="Thunder-Mike_Koenig.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="laugh" loop>
+      <source src="Evil_Laugh_Male.mp3" type="audio/mpeg" />
+    </audio>
+
+    <div class="centerer">
+      <i
+        class="fas fa-spider fa-5x fa-spin"
+        onclick="toggleAudio(document.getElementById('laugh'))"></i>
+      <i
+        class="fas fa-ghost fa-5x fa-spin"
+        onclick="toggleAudio(document.getElementById('thunder'))"></i>
+    </div>
+  </body>
+  <script>
+    function toggleAudio(audioElement) {
+      if (audioElement.paused) {
+        audioElement.play()
+      } else {
+        audioElement.pause()
+      }
+    }
+  </script>
+</html>
