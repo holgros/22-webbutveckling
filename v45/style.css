@@ -1,0 +1,23 @@
+/*
+  Detta ger en gradient på Instagram-ikonen. 
+  På samma sätt som om man skulle göra gradient på en "vanlig" text.
+*/
+.fa-instagram {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Css-egenskapen color kan användas för att styra färg på en ikon. */
+.fa-snapchat {
+  color: gray;
+}
+
+.fa-twitter {
+  color: #1da1f2; /*Twitter-blå*/
+}
