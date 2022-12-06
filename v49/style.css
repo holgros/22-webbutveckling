@@ -1,0 +1,10 @@
+
+circle {
+    fill-opacity: 0.5;
+    stroke: aqua;
+    transition: fill 1s ease-in;
+}
+
+circle:hover {
+    fill: red
+}
