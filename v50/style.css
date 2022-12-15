@@ -1,0 +1,11 @@
+:root {
+    --variabel-färg: red;
+}
+
+h1 {
+    color: var(--variabel-färg);
+}
+
+p {
+    background-color: var(--variabel-färg)
+}
