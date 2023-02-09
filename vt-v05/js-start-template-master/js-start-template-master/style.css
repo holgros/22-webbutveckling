@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #333;
+
+  transition: background-color 1s;
+}
+
+body.pitch-black {
+  background-color: black;
+}
+
+#js-logo {
+  width: 300px;
+  transition: width 1s ease-in; /* Gör att storleksförändringen animeras.*/
+}
+
+#js-logo.big-logo {
+  width: 600px;
+}
