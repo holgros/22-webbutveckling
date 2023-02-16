@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>JavaScript-övning: Lägga till i DOMen.</title>
+  </head>
+  <body>
+    <h1>JavaScript-övning: Lägga till i DOMen.</h1>
+    <p>
+      För att lösa de här uppgifterna behöver du titta på kod i t.ex. det här
+      repot
+      <a href="https://github.com/martinloman/js-add-to-dom"
+        >https://github.com/martinloman/js-add-to-dom</a
+      >.
+    </p>
+    <p>
+      Du kommer behöva hämta en referens till div:en
+      <code>shopping-cart-container</code> nedan genom att använda
+      <code>document.getElementById()</code>. Därefter ska du lägga in
+      information i div:en. Till att börja med är det bara text som ska in, då
+      kan du t.ex. använda egenskapen <code>.innerText</code>. Sedan ska du
+      skapa barn (children) till <code>shopping-cart-container</code> och då
+      kommer du behöva använda t.ex.
+      <a href="https://www.w3schools.com/jsref/met_document_createelement.asp"
+        ><code>document.createElement()</code></a
+      >
+      eller
+      <a href="https://www.w3schools.com/jsref/met_node_insertadjacenthtml.asp"
+        ><code>.insertAdjacentHTML()</code></a
+      >. Detta beskrivs mer i repot länkat ovan.
+      <code>.insertAdjacentHTML()</code> kan vara lättare att använda om man ska
+      lägga till en lite mer komplicerad HTML-kod för varje produkt.
+    </p>
+    <h2>shopping-cart-container 👇</h2>
+    <div id="shopping-cart-container"></div>
+
+    <h2>Uppgifter</h2>
+    <p>Gör så långt du hinner!</p>
+    <ol>
+      <li>
+        I app.js ligger en array med produkter. Använd en loop, tex.
+        <code>for</code> eller <code>forEach()</code> och skriv ut namnet på
+        alla produkter i div:en <code>shopping-cart-container</code>.
+        <br />
+        Det finns lite kod i <code>app.js</code> men den gör inte riktigt rätt.
+        Börja med att fixa den!
+        <br />
+        Ex: <img src="images/namn.PNG" alt="" />
+      </li>
+      <li>
+        Ändra din kod så att den skiver ut alla attribut om produkten på en egen
+        rad i <code>shopping-cart-container</code>.<br />
+        Först på raden ska produktbilden visas. För att göra det måste du
+        använda <code>&lt;img&gt;</code> och sätta <code>src</code> till värdet
+        i produktens <code>productImage</code> Styla den med CSS så den får en
+        rimlig storlek. <br />
+        <strong>Tips!</strong> Skapa en <code>&lt;div&gt;</code> för varje
+        produkt och lägg in informationen i den innan du lägger till den i
+        <code>shopping-cart-container</code>.
+        <br />
+        Ex: <img src="images/rader.PNG" alt="" />
+      </li>
+      <li>
+        Beräkna totala kostnaden för varje produkt genom att multiplicera
+        <code>price</code> med <code>quantity</code>. <br />
+        Skriv ut det totala priset för varje produkt på produktens rad.
+      </li>
+      <li>
+        Lägg till en knapp för varje produkt som det står "Ta bort" på. Styla
+        den så den blir röd-aktig.
+      </li>
+      <li>
+        Summera ihop den totala kostnaden på alla produkter i varukorgen. Skriv
+        den på en egen rad längst ned i <code>shopping-cart-container</code>
+      </li>
+      <li>
+        Snygga till din produkt-presentation så att det inte bara är rader med
+        text.<br />
+        Du kan t.ex. använda en tabell. För att göra det använder man taggen
+        &lt;table&gt; och skapar rader med &lt;tr&gt; och tabellceller i raden
+        med &lt;td&gt;. Läs om hur man skapar en tabell här
+        <a href="https://www.w3schools.com/html/html_tables.asp"
+          >https://www.w3schools.com/html/html_tables.asp</a
+        >.<br />
+        Ex: <img src="images/tabell.PNG" alt="" />
+      </li>
+    </ol>
+
+    <script src="app.js"></script>
+  </body>
+</html>
